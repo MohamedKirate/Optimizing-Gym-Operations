@@ -1,0 +1,21 @@
+name: gym_dataset
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout code
+              uses: action/checkout@v3
+            - name: set up python
+              uses: action/setup-python@v4
+              with:
+                python-vesrion: 3.12.4
+
+            - name: install all dependencies
+              run: |
+                pip install -r requirements.txt
+                

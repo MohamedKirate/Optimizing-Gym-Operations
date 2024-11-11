@@ -1,0 +1,11 @@
+pandas
+numpy
+mlflow
+scikit-learn
+typing
+xgboost
+catboost
+seaborn
+matplotlib
+joblib
+json
